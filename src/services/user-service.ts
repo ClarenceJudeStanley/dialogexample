@@ -1,17 +1,17 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {Album} from '../app/album/album-model';
+import {User} from '../app/user/user-model';
 
 
 @Injectable()
-export class AlbumService {
+export class UserService {
 
   constructor(private http: HttpClient) {
   }
 
-  findAlbum(): Observable<Album> {
-    return this.http.get<Album>('https://jsonplaceholder.typicode.com/users');
+  findAlbum(): Observable<User> {
+    return this.http.get<User>('https://jsonplaceholder.typicode.com/users');
   }
 }
 
