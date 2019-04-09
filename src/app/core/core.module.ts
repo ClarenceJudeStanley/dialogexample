@@ -53,6 +53,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     SidemenuComponent,
     SidemenuItemComponent,
     ToolbarComponent,
+    MatButtonModule,
     UserMenuComponent
   ],
 

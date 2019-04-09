@@ -3,6 +3,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {AcademyService} from '../../services/academy.service';
 import {Apprentice} from './apprentice.model';
 import {Observable} from 'rxjs';
+import {ActivatedRoute} from '@angular/router';
 @Component({
   selector: 'trg-apprentice-detail',
   templateUrl: './apprentice-detail.page.html',
@@ -14,7 +15,13 @@ export class ApprenticeDetailPage implements OnInit {
   apprentice$: Observable<Apprentice> = null;
 
   constructor(private form: FormBuilder,
+              private route: ActivatedRoute,
               private academyService: AcademyService) {
+
+    this.route.params.subscribe((param: {code: string})=>{
+  console.log(param.code)
+  });
+
     this.mainForm = this.form.group({
       code: ['', Validators.required],
       name: ['', Validators.minLength(6)],
