@@ -10,22 +10,22 @@ import {appRoutes} from './app.routes';
 import {AcademyModule} from './academy/academy.module';
 import {AcademyService} from '../services/academy.service';
 import {DashboardModule} from './dashboard/dashboard.module';
-import {CohortStatusPipe} from './academy/cohort-status.pipe';
 import {Payment} from './payment/payment';
-import {JokePage} from './joke/joke-page.component';
+import {JokePage} from './joke/joke-page';
 import {JokeService} from '../services/joke.service';
 import {UserListPage} from './photo/user-list.page';
-import {UserDetailPage} from './photo/user-details.page';
+import {UserDetailPage} from './photo/user-detail.page';
+import {JokePageComponent} from './joke/joke-page.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    JokePage,
     Payment,
     UserListPage,
-    UserDetailPage
+    UserDetailPage,
 
+    JokePageComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,7 +37,7 @@ import {UserDetailPage} from './photo/user-details.page';
     DashboardModule,
     AcademyModule,
   ],
-  providers: [AcademyService, JokeService, ],
+  providers: [AcademyService, JokeService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

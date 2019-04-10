@@ -14,8 +14,8 @@ export class UserService {
     return this.http.get<User>('https://jsonplaceholder.typicode.com/users');
   }
 
-  findUserById(Id:string): Observable<User> {
-    return this.http.get<User>('https://jsonplaceholder.typicode.com/users/'+Id);
+  findUserById(id:string): Observable<User> {
+    return this.http.get<User>('https://jsonplaceholder.typicode.com/users/'+id);
   }
 }
 

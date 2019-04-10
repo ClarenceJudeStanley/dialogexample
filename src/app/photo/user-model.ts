@@ -1,5 +1,4 @@
-import {Address} from './address-model';
-import {Company} from './company-model';
+import {Address, Company} from '../user/user-model';
 
 export interface User {
 

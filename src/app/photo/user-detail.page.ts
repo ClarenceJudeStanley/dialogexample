@@ -7,9 +7,9 @@ import {ActivatedRoute} from '@angular/router';
 import {User} from '../user/user-model';
 import {UserService} from '../../services/user-service';
 @Component({
-  selector: 'trg-users-detail',
-  templateUrl: './users-details.page.html',
-  styleUrls: ['./users-details.page.scss']
+  selector: 'trg-user-detail',
+  templateUrl: './user-detail.page.html',
+  styleUrls: ['./user-detail.page.scss']
 })
 export class UserDetailPage implements OnInit {
   mainForm: FormGroup;
