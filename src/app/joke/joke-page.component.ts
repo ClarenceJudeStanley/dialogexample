@@ -1,15 +1,13 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {Observable} from 'rxjs';
-import {Joke} from './joke-model';
-import {JokeService} from '../../services/joke-services';
 import {Router} from '@angular/router';
-import {Cohort} from '../academy/cohort.model';
-
+import {Joke} from './joke-model';
+import {Observable} from 'rxjs';
+import {JokeService} from '../../services/joke.service';
 @Component ( {
   selector: 'trg-joke',
   templateUrl: './joke-page.component.html'
 })
-export class JokePage implements OnInit, OnDestroy {
+export class JokePageComponent implements OnInit, OnDestroy {
 
 
   joke$: Observable<Joke>;
@@ -31,13 +29,6 @@ export class JokePage implements OnInit, OnDestroy {
 
     console.log("ngOnInit is running...")
   }
-
-  }
-
-
-
-
-
 
 }
 
