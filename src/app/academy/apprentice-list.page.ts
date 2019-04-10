@@ -17,7 +17,7 @@ export class ApprenticeListPage implements OnInit {
   public dataSource: ApprenticeDataSource;
 
   constructor(private academyService: AcademyService,
-              private router: Router,
+              private router:  Router,
               private dialog: MatDialog,
               private snackBar: MatSnackBar) {
   }

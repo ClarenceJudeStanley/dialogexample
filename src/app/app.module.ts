@@ -11,11 +11,16 @@ import {AcademyModule} from './academy/academy.module';
 import {AcademyService} from '../services/academy.service';
 import {DashboardModule} from './dashboard/dashboard.module';
 import {CohortStatusPipe} from './academy/cohort-status.pipe';
+import {JokePage} from './joke/joke-page.component';
+import {Payment} from './payment/payment';
+import {JokeService} from '../services/joke-services';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    JokePage,
+    Payment,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +32,7 @@ import {CohortStatusPipe} from './academy/cohort-status.pipe';
     DashboardModule,
     AcademyModule,
   ],
-  providers: [AcademyService],
+  providers: [AcademyService, JokeService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
