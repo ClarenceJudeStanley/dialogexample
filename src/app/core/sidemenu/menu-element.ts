@@ -27,6 +27,13 @@ export const menus = [
         'chip': {'value': 2, 'color': 'accent'},
         'open': false,
       },
+      {
+        'name': 'Payment',
+        'icon': 'filter_list',
+        'link': '/terang/payment',
+        'chip': {'value': 2, 'color': 'accent'},
+        'open': false,
+      },
     ]
   },
 ];
