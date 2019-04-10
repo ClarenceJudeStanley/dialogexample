@@ -8,10 +8,10 @@ import {User} from '../user/user-model';
 import {UserService} from '../../services/user-service';
 @Component({
   selector: 'trg-users-detail',
-  templateUrl: './users-detail.page.html',
-  styleUrls: ['./users-detail.page.scss']
+  templateUrl: './users-details.page.html',
+  styleUrls: ['./users-details.page.scss']
 })
-export class UsersDetailPage implements OnInit {
+export class UserDetailPage implements OnInit {
   mainForm: FormGroup;
   submitted = false;
   user$: Observable<User> = null;
@@ -21,8 +21,8 @@ export class UsersDetailPage implements OnInit {
               private userService: UserService) {
 
     this.route.params.subscribe(
-      (param : {code : string})=>{
-        this.user$ = userService.findPhotoById(param.id)
+      (param : {id : string})=>{
+        this.user$ = userService.findUserById(param.id)
     })
 
     // this.mainForm = this.form.group({

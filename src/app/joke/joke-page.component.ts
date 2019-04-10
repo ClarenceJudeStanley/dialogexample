@@ -13,12 +13,13 @@ export class JokePage implements OnInit, OnDestroy {
 
 
   joke$: Observable<Joke>;
-  constructor (private jokeService: JokeService,private router: Router){
+
+  constructor(private jokeService: JokeService, private router: Router) {
     this.joke$ = this.jokeService.findJoke();
     console.log("Constructor running...")
   }
 
-  goToNextPage(){
+  goToNextPage() {
     this.router.navigate(['/academy/apprentices/', new Date().getTime()]);
 
   }
@@ -31,15 +32,9 @@ export class JokePage implements OnInit, OnDestroy {
 
     console.log("ngOnInit is running...")
   }
-
-  }
-
-
-
-
-
-
 }
+
+
 
 
 

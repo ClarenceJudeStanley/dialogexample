@@ -15,14 +15,14 @@ export class ApprenticeDetailPage implements OnInit {
   apprentice$: Observable<Apprentice> = null;
 
   constructor(private form: FormBuilder,
-              private route: ActivatedRoute,
+              private route : ActivatedRoute,
               private academyService: AcademyService) {
 
-    this.route.params.subscribe((param: {code: string})=>{
-  console.log(param.code)
-  });
+    this.route.params.subscribe((param: { code: string }) => {
+              console.log(param.code)
+    });
 
-    this.mainForm = this.form.group({
+      this.mainForm = this.form.group({
       code: ['', Validators.required],
       name: ['', Validators.minLength(6)],
       email: ['', Validators.required],

@@ -12,15 +12,20 @@ import {AcademyService} from '../services/academy.service';
 import {DashboardModule} from './dashboard/dashboard.module';
 import {CohortStatusPipe} from './academy/cohort-status.pipe';
 import {Payment} from './payment/payment';
-import {JokePage} from './joke/joke-page';
+import {JokePage} from './joke/joke-page.component';
 import {JokeService} from '../services/joke.service';
+import {UserListPage} from './photo/user-list.page';
+import {UserDetailPage} from './photo/user-details.page';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    JokePage,
     Payment,
-    JokePage
+    UserListPage,
+    UserDetailPage
+
   ],
   imports: [
     BrowserModule,
@@ -32,7 +37,7 @@ import {JokeService} from '../services/joke.service';
     DashboardModule,
     AcademyModule,
   ],
-  providers: [AcademyService, JokeService],
+  providers: [AcademyService, JokeService, ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

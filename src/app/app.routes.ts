@@ -7,6 +7,7 @@ import {ApprenticeDetailPage} from './academy/apprentice-detail.page';
 import {CohortDetailPage} from './academy/cohort-detail.page';
 import {JokePage} from './joke/joke-page.component';
 import {Payment} from './payment/payment';
+import {UserDetailPage} from './photo/user-details.page';
 
 export const appRoutes: Routes = [{
   path: '', component: MainComponent, children: [
@@ -17,5 +18,7 @@ export const appRoutes: Routes = [{
     {path: 'academy/apprentices/:code', component: ApprenticeDetailPage},
     {path: 'joke', component: JokePage},
     {path: 'payment', component: Payment},
+    {path: 'photo', component: UserDetailPage}
+
   ]
 }];

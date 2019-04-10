@@ -10,11 +10,11 @@ export class UserService {
   constructor(private http: HttpClient) {
   }
 
-  findPhoto(): Observable<User> {
+  findUsers(): Observable<User> {
     return this.http.get<User>('https://jsonplaceholder.typicode.com/users');
   }
 
-  findPhotoById(Id:string): Observable<User> {
+  findUserById(Id:string): Observable<User> {
     return this.http.get<User>('https://jsonplaceholder.typicode.com/users/'+Id);
   }
 }

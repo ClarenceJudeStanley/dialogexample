@@ -20,17 +20,19 @@ export const menus = [
         'chip': {'value': 2, 'color': 'accent'},
         'open': false,
       },
+
       {
-        'name': 'All Apprentices',
+        'name': 'The Apprentices',
         'icon': 'filter_list',
         'link': '/academy/apprentices/list',
         'chip': {'value': 2, 'color': 'accent'},
         'open': false,
       },
+
       {
         'name': 'Payment',
         'icon': 'filter_list',
-        'link': '/terang/payment',
+        'link': '/academy/payment',
         'chip': {'value': 2, 'color': 'accent'},
         'open': false,
       },

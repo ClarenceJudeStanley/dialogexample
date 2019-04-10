@@ -3,7 +3,7 @@ import {Company} from './company-model';
 
 export interface User {
 
-  Id: number,
+  id: number,
   name: string,
   username: string,
   email: string,

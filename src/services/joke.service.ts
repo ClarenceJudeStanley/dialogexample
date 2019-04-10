@@ -14,5 +14,5 @@ export class JokeService {
   findJoke(): Observable<Joke> {
     return this.http.get<Joke>('https://api.chucknorris.io/jokes/random');
   }
-}
 
+}
