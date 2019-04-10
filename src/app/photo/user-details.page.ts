@@ -4,6 +4,8 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 // import {Apprentice} from './apprentice.model';
 import {Observable} from 'rxjs';
 import {ActivatedRoute} from '@angular/router';
+import {User} from '../user/user-model';
+import {UserService} from '../../services/user-service';
 @Component({
   selector: 'trg-users-detail',
   templateUrl: './users-detail.page.html',
