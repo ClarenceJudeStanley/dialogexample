@@ -11,16 +11,16 @@ import {AcademyModule} from './academy/academy.module';
 import {AcademyService} from '../services/academy.service';
 import {DashboardModule} from './dashboard/dashboard.module';
 import {CohortStatusPipe} from './academy/cohort-status.pipe';
-import {JokePage} from './joke/joke-page.component';
 import {Payment} from './payment/payment';
-import {JokeService} from '../services/joke-services';
+import {JokePage} from './joke/joke-page';
+import {JokeService} from '../services/joke.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    JokePage,
     Payment,
+    JokePage
   ],
   imports: [
     BrowserModule,
